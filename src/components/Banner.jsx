@@ -73,7 +73,7 @@ const Banner = () => {
               <FaLinkedin size={32} />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Sabrinaislamrity"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -13,16 +14,25 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
-          alert("Message sent successfully!");
-          form.current.reset();
-        },
+          Swal.fire({
+          icon: "success",
+          title: "Message Sent!",
+          text: "Thanks for reaching out. I’ll get back to you soon.",
+          confirmButtonColor: "#ebb66b",
+        });
+        form.current.reset();
+      },
         (error) => {
-          console.log("FAILED...", error.text);
-          alert("Something went wrong. Please try again.");
-        }
-      );
-  };
+           Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong. Please try again.",
+          confirmButtonColor: "#ebb66b",
+        });
+        console.log("FAILED...", error.text);
+      }
+    );
+};
 
   return (
     <>
