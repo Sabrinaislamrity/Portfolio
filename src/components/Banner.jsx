@@ -50,7 +50,7 @@ const Banner = () => {
               animationDelay: "0.8s",
             }}
           >
-            Passionate about creating beautiful and functional websites that help businesses grow.
+            Passionate about creating beautiful and functionales websites that help businesses grow.
             I love combining clean code with stunning designs.
           </p>
 

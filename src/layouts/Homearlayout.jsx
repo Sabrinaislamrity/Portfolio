@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import Navber from "../components/Navber";
 
 import About from "../pages/About";
@@ -7,12 +7,10 @@ import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import Error from "../pages/Error";
 import Home from "../components/Home";
-import Skill from "../pages/Skill";
-// import { Outlet } from "react-router";
+import Skill from '../pages/Skill';
 
-
-const Main = () => {
-  const [route, setRoute] = useState(window.location.pathname);
+const Homearlayout = () => {
+     const [route, setRoute] = useState(window.location.pathname);
 
   // Handle manual routing
   useEffect(() => {
@@ -51,4 +49,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Homearlayout;

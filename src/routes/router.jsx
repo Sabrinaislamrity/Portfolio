@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router";
-import Main from "../layouts/Main";
+
 
 import About from "../pages/About";
 import Projects from "../pages/Projects";
@@ -8,11 +8,12 @@ import Contact from "../pages/Contact";
 import Error from "../pages/Error";
 import Home from "../components/Home";
 import Skill from "../pages/Skill";
+import Homearlayout from "../layouts/Homearlayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Homearlayout></Homearlayout>,
     children:[
         {
                 index: true,
